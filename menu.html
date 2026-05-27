@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUSH Burger | Kompletní Menu</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">CRUSH<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="menu.html" style="color: var(--color-brand)">Menu</a></li>
+                <li><a href="about.html">O nás</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button id="cart-btn" style="background: transparent; border: none; font-size: 1.5rem; cursor: pointer; position: relative;">
+                    🛒 <span id="cart-count" style="position: absolute; top: -10px; right: -15px; background: var(--color-brand); color: white; border-radius: 50%; padding: 2px 8px; font-size: 0.9rem; font-weight: bold;">0</span>
+                </button>
+                <a href="menu.html" class="btn-primary">Objednat hned</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="banner" style="padding: 4rem 2rem; min-height: auto;">
+        <div class="banner-content">
+            <h1 style="font-size: 4rem;">Celé Menu</h1>
+            <p>Vyber si svůj crush. Žádný kompromisy.</p>
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section class="menu-section" style="padding-top: 4rem;">
+        <div class="container text-center">
+            
+            <!-- Category 1 -->
+            <h2 class="section-title">Burgery</h2>
+            <div class="menu-grid" style="margin-bottom: 4rem;">
+                <!-- Item 1 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Klasik Burger">
+                        <div class="price-tag">199 Kč</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Classic Crush</h3>
+                        <p>Dvojité hovězí maso, cheddar, slanina, karamelizovaná cibulka, naše tajná omáčka, brioška.</p>
+                        <div class="extras" style="margin-bottom: 1rem; text-align: left; font-size: 0.9rem;">
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-cheese" value="20"> Sýr navíc (+20 Kč)</label>
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-bacon" value="30"> Slanina navíc (+30 Kč)</label>
+                        </div>
+                        <button class="btn-primary full-width">Do košíku</button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card highlight-card">
+                    <div class="card-img-wrapper">
+                        <div class="hot-badge">🔥 Pálí!</div>
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Spicy Burger">
+                        <div class="price-tag">229 Kč</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>El Diablo</h3>
+                        <p>Hovězí maso, pepper jack sýr, jalapeños, habanero majonéza, nachos, brioška.</p>
+                        <div class="extras" style="margin-bottom: 1rem; text-align: left; font-size: 0.9rem;">
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-cheese" value="20"> Sýr navíc (+20 Kč)</label>
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-bacon" value="30"> Slanina navíc (+30 Kč)</label>
+                        </div>
+                        <button class="btn-black full-width">Do košíku</button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vegg Burger">
+                        <div class="price-tag">189 Kč</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Truffle Mushroom (V)</h3>
+                        <p>Grilovaný portobello hřib, lanýžová majonéza, rukola, gouda, brioška.</p>
+                        <div class="extras" style="margin-bottom: 1rem; text-align: left; font-size: 0.9rem;">
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-cheese" value="20"> Sýr navíc (+20 Kč)</label>
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-bacon" value="30"> Slanina navíc (+30 Kč)</label>
+                        </div>
+                        <button class="btn-primary full-width">Do košíku</button>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chicken Burger">
+                        <div class="price-tag">209 Kč</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Crispy Chicken</h3>
+                        <p>Smažené křupavé kuřecí prso, coleslaw, nakládaná okurka, BBQ mayo.</p>
+                        <div class="extras" style="margin-bottom: 1rem; text-align: left; font-size: 0.9rem;">
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-cheese" value="20"> Sýr navíc (+20 Kč)</label>
+                            <label style="display: block; cursor: pointer;"><input type="checkbox" class="extra-bacon" value="30"> Slanina navíc (+30 Kč)</label>
+                        </div>
+                        <button class="btn-primary full-width">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <h2 class="section-title">Přílohy & Smažené</h2>
+            <div class="menu-grid" style="margin-bottom: 4rem;">
+                <!-- Item 1 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hranolky">
+                        <div class="price-tag">65 Kč</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Steakové hranolky</h3>
+                        <p>Dvakrát smažené domácí hranolky s naší originální směsí koření.</p>
+                        <button class="btn-primary full-width">Do košíku</button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="onion_rings.png" alt="Cibulové kroužky" style="object-fit: cover;">
+                        <div class="price-tag">85 Kč</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cibulové kroužky</h3>
+                        <p>Pivní těstíčko, dozlatova smažené, podávané s česnekovým dipem.</p>
+                        <button class="btn-primary full-width">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>CRUSH<span>.</span></h2>
+                <p>Eat hard, play hard.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Informace</h4>
+                <ul>
+                    <li><a href="about.html">O nás</a></li>
+                    <li><a href="career.html">Kariéra</a></li>
+                    <li><a href="delivery.html">Rozvoz</a></li>
+                    <li><a href="allergens.html">Alergeny</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="contact">
+                <h4>Kontakt</h4>
+                <p>📍 Burgerová Street 66, Město</p>
+                <p>✉️ hello@crushburger.cz</p>
+                <p>📞 +420 777 666 555</p>
+                <p>⏰ Po-So: 11:00 - 23:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CRUSH Burger. All rights reserved. | Vytvořeno společností <strong>Venvio</strong></p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar overlay -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tvůj Košík</h2>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items will be injected here by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Celkem:</span>
+                <span id="cart-total-price">0 Kč</span>
+            </div>
+            <button class="btn-primary full-width" onclick="alert('Demo: Přechod k platbě')">Zaplatit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

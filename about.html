@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUSH Burger | O nás</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">CRUSH<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html" style="color: var(--color-brand)">O nás</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button id="cart-btn" style="background: transparent; border: none; font-size: 1.5rem; cursor: pointer; position: relative;">
+                    🛒 <span id="cart-count" style="position: absolute; top: -10px; right: -15px; background: var(--color-brand); color: white; border-radius: 50%; padding: 2px 8px; font-size: 0.9rem; font-weight: bold;">0</span>
+                </button>
+                <a href="menu.html" class="btn-primary">Objednat hned</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="banner" style="padding: 4rem 2rem; min-height: auto; background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="banner-content">
+            <h1 style="font-size: 4rem;">Naše Story</h1>
+            <p>Jsme banda nadšenců, co dělá burgery jinak.</p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section style="padding: 6rem 0; background-color: var(--color-white);">
+        <div class="container" style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.2rem;">
+            <h2 class="section-title" style="margin-bottom: 2rem;">Žádný bullshit, jen pořádný maso</h2>
+            <p style="margin-bottom: 2rem;">Všechno to začalo v roce 2021 v jedný malý garáži, kde jsme s partou ladili recept na tu nejlepší briošku a testovali všechny možný druhy masa, dokud jsme nenašli tu absolutně nejdokonalejší rovnováhu chuti a šťavnatosti.</p>
+            <p style="margin-bottom: 2rem;">Náš slib zní jasně: <strong>Všechno si děláme sami.</strong></p>
+            <ul style="list-style-type: square; padding-left: 2rem; margin-bottom: 3rem;">
+                <li>Zemědělci z okolí nám každé ráno vozí čerstvé hovězí maso.</li>
+                <li>Bulky pečeme u nás, aby byly nadýchané jako obláček, ale nepustily šťávu ven.</li>
+                <li>Omáčky jsou naším rodinným tajemstvím.</li>
+            </ul>
+            
+            <div style="background-color: var(--color-bg); border-left: 6px solid var(--color-brand); padding: 2rem; margin-bottom: 3rem; font-weight: 700;">
+                "Nezajímá nás, jak to dělají ostatní. My děláme burgery pro ty, kteří se nebojí umazat a chtějí opravdový zážitek."
+                <br><br>- Tomáš & Filip, Zakladatelé
+            </div>
+
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;">Náš tým</h3>
+            <p>Jsme parta kuchařů, kteří neustále posouvají limity. Testujeme nové kombinace, sledujeme světové trendy, ale nikdy nezapomínáme na tu nejčistší podstatu: perfektně ogrilované maso a rozteklý sýr.</p>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="menu.html" class="btn-primary large">Jdu se najíst</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>CRUSH<span>.</span></h2>
+                <p>Eat hard, play hard.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Informace</h4>
+                <ul>
+                    <li><a href="about.html">O nás</a></li>
+                    <li><a href="career.html">Kariéra</a></li>
+                    <li><a href="delivery.html">Rozvoz</a></li>
+                    <li><a href="allergens.html">Alergeny</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="contact">
+                <h4>Kontakt</h4>
+                <p>📍 Burgerová Street 66, Město</p>
+                <p>✉️ hello@crushburger.cz</p>
+                <p>📞 +420 777 666 555</p>
+                <p>⏰ Po-So: 11:00 - 23:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CRUSH Burger. All rights reserved. | Vytvořeno společností <strong>Venvio</strong></p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar overlay -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tvůj Košík</h2>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items will be injected here by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Celkem:</span>
+                <span id="cart-total-price">0 Kč</span>
+            </div>
+            <button class="btn-primary full-width" onclick="alert('Demo: Přechod k platbě')">Zaplatit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
